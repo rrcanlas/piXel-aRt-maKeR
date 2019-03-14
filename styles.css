@@ -1,0 +1,536 @@
+/*
+
+ By Rose Renie - 04/04/2018
+
+    U D A C I T Y  2018
+
+ Pixel Art Maker - Exercise 3 */
+
+
+/* UDACITY image elements */
+
+
+body {
+    text-align: center;
+    position: fixed;
+    left: 650px;
+    top: 5px;
+    background-color: #0b96ce; 
+}
+
+
+.border00 {
+  position: inherit;
+  height: 350px;
+  width: 300px;
+  left: 180px;
+  top: 150px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 10.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+/* border elements (outer border, slides border, 
+    color picker border, design border, get screenshot) */
+
+.border0,
+.border1,
+.border2,
+.border3,
+.border4,
+.border6 {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    -webkit-box-shadow: 16px 16px 0px -5px rgba(222,222,222,1);
+    -moz-box-shadow: 16px 16px 0px -5px rgba(222,222,222,1);
+    box-shadow: 10px 10px 0px -5px rgba(222,222,222,1);
+}
+
+
+.border0 {
+    position: inherit;
+    top: 155px;
+    left: 2px;
+    width: 570px;
+    height:400px;
+    padding: 10px;
+    color: white;
+    left: 30px;
+    top: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* outer border */
+
+.border1 {
+    width: 570px;
+    height: 170px;
+    padding: 10px 10px;
+}
+
+
+/* slides border */
+
+.border2 {    
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 1px 0 0 2px;
+    padding: 4px;
+}
+
+
+/* color picker border */
+
+.border3 {    
+    position: absolute;
+    top: 10px;
+    left: 390px;
+    width: 170px;
+    height: 65px;
+    padding: 4px;
+    margin: 0;
+}
+
+
+/* design border */
+
+.border4 {
+    position: absolute;
+    top: 155px;
+    left: 2px;
+    width: 570px;
+    height:400px;
+    padding: 10px;
+    color: white;
+}
+
+
+/* submit & reset button border */
+
+.border5 {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    width: 300px;
+    height:20px;
+    padding: 4px;
+    margin: 0;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+
+/* get screenshot border */
+
+.border6 {  
+    position: absolute;
+    top: 90px;
+    left: 380px;
+    width: 170px;
+    height: 60px;
+    padding: 4px;
+    margin: 0;
+}
+
+
+/* get screenshot border */
+
+.border6 {  
+    position: absolute;
+    top: 90px;
+    left: 380px;
+    width: 170px;
+    height: 60px;
+    padding: 4px;
+    margin: 0;
+} 
+
+
+/* 1st & 2nd Title elements */
+
+h1,
+h3,
+.thank-you,
+.create {
+    font-family: Rancho, sans-serif;
+    font-size: 50px;   
+    text-shadow: 4px 4px 4px #aaa;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {color: white;}
+    to {color: #1a65a8;}
+}
+
+
+/* Standard syntax */
+@keyframes mymove {
+    from {color: white;}
+    to {color: #1a65a8;}
+}
+
+
+h1 {  
+    position: fixed;  
+    margin: 5px;
+    top: 125px;
+    left: 205px;
+    color: red;
+ }   
+
+
+/* Label elements on border2 */
+
+h2 {
+    margin: 2em 0 0.25em;
+    color: #fbbb00;
+    font-size: 15px;
+}
+
+
+/*h2:first-of-type {
+    margin-top: 0.5em;
+}*/
+
+
+/* 2nd Title elements (Canvas Designer) */
+
+h3 {
+    font-family: Rancho, sans-serif;
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    left: 290px;
+    top: 300px;
+}
+
+
+/* /* Animation on Images Design elements */
+
+h4 {  
+    position: absolute;
+    top: 270px;
+    left: 145px;
+    width: 305px;
+    height:305px;
+    border: 1px solid #d3d3d3;
+    background-size: 304px 304px;
+    background-color: #0b96ce;
+    background-repeat: no-repeat, repeat;
+    background-position:0px 0px;
+     -webkit-animation-name: anime; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;   
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Animation on Images  
+Safari 4.0 - 8.0   https://s19.postimg.cc/8x0osl69v/u_Logo.png*/
+@-webkit-keyframes anime {
+    0%   {background-image: url('https://s19.postimg.cc/8x0osl69v/u_Logo.png'); position: 125px 70px;  size: 304px 304px; }
+    20%  {background-image: url('https://s19.postimg.cc/4b4kk8sgj/paw.png'); position: 125px 70px; size: 304px 304px;}
+    40%  {background-image: url('https://s19.postimg.cc/ihkbfgg6b/dolphine.png'); position: 125px 70px;size: 304px 304px;}
+    60%  {background-image: url('https://s19.postimg.cc/qztrjsez7/autism.png'); position: 125px 70px;size: 304px 304px;}
+    80% {background-image: url('https://s19.postimg.cc/ljm9kzxlf/google.png'); position: 125px 70px; size: 304px 304px;}
+    100% {background-image: url('https://s19.postimg.cc/8x0osl69v/u_Logo.png'); position: 125px 70px; size: 304px 304px;}
+}
+
+
+/* Animation on Images 
+Standard syntax */
+@keyframes anime {
+    0%   {background-image: url('https://s19.postimg.cc/8x0osl69v/u_Logo.png'); position: 125px 70px;size: 304px 304px;}
+    20%  {background-image: url('https://s19.postimg.cc/4b4kk8sgj/paw.png'); position: 125px 70px;size: 304px 304px;}
+    40%  {background-image: url('https://s19.postimg.cc/ihkbfgg6b/dolphine.png'); position: 125px 70px;size: 304px 304px;}
+    60%  {background-image: url('https://s19.postimg.cc/qztrjsez7/autism.png'); position: 125px 70px;size: 304px 304px;}
+    80% {background-image: url('https://s19.postimg.cc/ljm9kzxlf/google.png'); position: 125px 70px;size: 304px 304px;}
+    100% {background-image: url('https://s19.postimg.cc/8x0osl69v/u_Logo.png'); position: 125px 70px; size: 304px 304px;}
+}
+
+
+/* elements on (Choose Grid Size) */
+
+.choose-title,
+.pick-color {
+    color: white;
+    font-family: Rancho, sans-serif;
+    font-size: 30px;   
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+
+/* UDACITY Logo */
+
+.google {
+    position: inherit;
+    left: 30px;
+    top: 35px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* thank you elements on the UDACITY logo */
+
+.greetings {
+    position: relative;
+    text-align: center;
+}
+
+
+.thank-you {
+    font-family: Roboto, sans-serif;
+    color: red;
+    font-size: 100px;
+    position: fixed;   
+    top: 270px;
+    left: 280px; 
+}
+
+
+/* instruction display while designing */
+
+.create {
+    color: red;
+    font-size: 20px;
+    position: absolute;   
+    top: 460px;
+    left: 820px; 
+}
+
+
+/* Table elements (row & column) */
+
+table,
+tr,
+td {
+    border: 1px solid #5a5e63;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+    left: 0;
+    cursor: pointer;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* row  */
+tr {
+    height: 20px;
+}
+
+
+/* column */
+td {
+    width: 20px;
+}
+
+
+/* Submit & Reset button elements */
+
+input[type=button] {
+    background-color: #ddd;
+    border: none;
+    color: #3c4751;    
+    text-align: center;
+    font-size: 12px;    
+    transition: 0.3s;
+    border-radius: 8px;    
+    top: 10px;
+    left: 730px;       
+}
+
+
+input[type=button]:hover {
+    background-color: #3e8e41;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* cursor value */
+
+input[type=color] {
+    cursor: pointer;
+}
+
+
+/* slider elements for height */
+
+.slide-container {
+    width: 100%;
+}
+
+
+.slider-height {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.slider-height:hover {
+    opacity: 1;
+}
+
+
+.slider-height::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 20px;
+    border-radius: 10%;
+    background: #377ef3;
+    cursor: pointer;
+}
+
+
+.slider-height::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #377ef3;
+    cursor: pointer;
+}
+
+
+/* slider elements for the width */
+
+.slider-width {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.slider-width:hover {
+    opacity: 1;
+}
+
+
+.slider-width::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 20px;
+    border-radius: 10%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+.slider-width::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+/* slides rgb value */
+#height-color,
+#width-color {
+    color: red;
+}
+
+
+/* elements for the Get Screenshot button */
+
+#button {
+    background-color: #ddd;
+    border: 5px;
+    color: #3c4751;       
+    border-radius: 8px; 
+    width: 92px;  
+    height: 18px; 
+    top: 20px;
+    left: 40px; 
+    font-size: 12px;    
+    transition: 0.3s;
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    padding: 3px;
+}
+
+
+a:link {    
+    line-height: 10px;
+    text-decoration: none;
+    color: #3c4751;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+a:hover {
+    background-color: #3e8e41;
+    color: white;
+    cursor: pointer;
+}
+
+
+

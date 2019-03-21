@@ -27,7 +27,7 @@
    * CSS  
    * JQuery -
    	[cdnjs](https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js) and [ajax](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js).    
-   * Google Fonts - [Roboto](https://fonts.googleapis.com/css?family=Roboto) and [Rancho](https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple).                
+   * Google Fonts - [Roboto](https://fonts.google.com/?query=roboto) and [Rancho](https://fonts.google.com/?query=rancho).                
    * [Post Image](https://postimg.cc/gallery/1hjlzj4mo/) for the images.
 
        
